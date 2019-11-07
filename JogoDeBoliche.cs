@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoJogoDeBoliche
 {
-    class JogoDeBoliche : IJogoOperacoes
+    public class JogoDeBoliche : IJogoOperacoes
     {
         private int[] jogadas = new int[21];
         private int jogadaIndex = 0;

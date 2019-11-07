@@ -75,14 +75,14 @@ namespace ProjetoJogoDeBoliche
             //    Jogo.Jogar(0);
             //}
             //Um strike.
-           // Jogo.Jogar(10);
+            // Jogo.Jogar(10);
 
 
             #region ScoreFinal
             //mostra pontuação do jogo.
             #endregion
             Console.WriteLine(Jogo.ObterPontuacao() + " Pontos.");
-          
+
         }
 
     }
