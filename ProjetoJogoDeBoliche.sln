@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoJogoDeBoliche", "ProjetoJogoDeBoliche.csproj", "{5C86F749-2ADA-4951-8D28-681F18F8E418}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{3BAFC84E-FD20-4B50-B0A2-24100D0FC12A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BolicheAPP.Test", "BolicheAPP.Test\BolicheAPP.Test.csproj", "{0DB3624A-4607-4CE2-8B93-FAF049F69F50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{5C86F749-2ADA-4951-8D28-681F18F8E418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C86F749-2ADA-4951-8D28-681F18F8E418}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C86F749-2ADA-4951-8D28-681F18F8E418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB3624A-4607-4CE2-8B93-FAF049F69F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB3624A-4607-4CE2-8B93-FAF049F69F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB3624A-4607-4CE2-8B93-FAF049F69F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB3624A-4607-4CE2-8B93-FAF049F69F50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DB3624A-4607-4CE2-8B93-FAF049F69F50} = {3BAFC84E-FD20-4B50-B0A2-24100D0FC12A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F3F2278C-FEF3-4160-8BF5-A097A0B05B37}

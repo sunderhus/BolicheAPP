@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoJogoDeBoliche
 {
-    class JogoBonusCalculos : IJogoBonusCalculos
+    public class JogoBonusCalculos : IJogoBonusCalculos
     {
         public void CalcularBonusDoSpare(ref int pontuacaoTotal, ref int[] jogadas, ref int indexDoArremesso)
         {

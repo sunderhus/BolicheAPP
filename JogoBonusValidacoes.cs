@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoJogoDeBoliche
 {
-    class JogoBonusValidacoes : IJogoBonusValidacoes
+    public class JogoBonusValidacoes : IJogoBonusValidacoes
     {
         public bool IsStrike(ref int []jogadas,ref int indexDoArremesso)
         {

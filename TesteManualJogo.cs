@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoJogoDeBoliche
 {
-    class TestarJogo
+    class TesteManualJogo
     {
         static void Main(string[] args)
         {
@@ -58,7 +58,7 @@ namespace ProjetoJogoDeBoliche
             //    Jogo.Jogar(10);
             //}
 
-            //primeiro strike, pontos ou nao , mas sem spares
+            //primeira jogada Strike.
             //Jogo.Jogar(10);
             //Jogo.Jogar(3);
             //Jogo.Jogar(4);
@@ -75,14 +75,13 @@ namespace ProjetoJogoDeBoliche
             //    Jogo.Jogar(0);
             //}
             //Um strike.
-           // Jogo.Jogar(10);
+            // Jogo.Jogar(10);
 
 
             #region ScoreFinal
             //mostra pontuação do jogo.
             #endregion
-            Console.WriteLine(Jogo.ObterPontuacao() + " Pontos.");
-          
+            Console.WriteLine($"Total no jogo: {Jogo.ObterPontuacao()} pontos.");
         }
 
     }

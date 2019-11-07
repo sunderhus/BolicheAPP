@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoJogoDeBoliche.Interfaces
 {
-    interface IJogoBonusValidacoes
+    public interface IJogoBonusValidacoes
     {
         public bool IsStrike(ref int[] jogadas, ref int indexDoArremesso);
         public bool IsSpare(ref int[] jogadas, ref int posicao);
