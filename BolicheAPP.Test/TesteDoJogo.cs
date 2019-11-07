@@ -7,7 +7,7 @@ namespace BolicheAPP.Test
     public class TesteDoJogo
     {
         [TestMethod]
-        public void TesteIntanciarClasse()
+        public void TestarConstrutor()
         {
             var validacoesDeBonus = new JogoBonusValidacoes();
             var calculosDeBonus = new JogoBonusCalculos();
@@ -15,17 +15,46 @@ namespace BolicheAPP.Test
         }
 
         [TestMethod]
+        public void TestarJogoSemBonus()
+        {
+            var validacoesDeBonus = new JogoBonusValidacoes();
+            var calculosDeBonus = new JogoBonusCalculos();
+            var Jogo = new JogoDeBoliche(validacoesDeBonus, calculosDeBonus);
+
+            for (int i = 0; i < 20; i++)
+            {
+                Jogo.Jogar(1);
+            }
+            //Preparação
+            int pontuacao = Jogo.ObterPontuacao();
+            
+            //Validação
+            Assert.AreEqual(pontuacao, 20);
+
+        }
+        [TestMethod]
         public void TestarStrike()
         {
             var validacoesDeBonus = new JogoBonusValidacoes();
             var calculosDeBonus = new JogoBonusCalculos();
             var Jogo = new JogoDeBoliche(validacoesDeBonus, calculosDeBonus);
+            
             Jogo.Jogar(10);
-            //preparacao
+            Jogo.Jogar(3);
+            Jogo.Jogar(4);
+
+            for (int i = 0; i < 16; i++)
+            {
+                Jogo.Jogar(0);
+            }
+
+            //Preparação
             int pontuacao = Jogo.ObterPontuacao();
-            //validacao
-            Assert.AreEqual(pontuacao, 10);
+
+            //Validação
+            Assert.AreEqual(pontuacao, 24);
         }
+
         [TestMethod]
         public void TestarSpare()
         {
@@ -38,11 +67,13 @@ namespace BolicheAPP.Test
             {
                 Jogo.Jogar(0);
             }
-            //preparacao
+            //Preparação
             int pontuacao = Jogo.ObterPontuacao();
-            //validacao
+            
+            //Validação
             Assert.AreEqual(pontuacao, 10);
         }
+
         [TestMethod]
         public void TestarEnunciado()
         {
@@ -51,38 +82,40 @@ namespace BolicheAPP.Test
             var Jogo = new JogoDeBoliche(validacoesDeBonus, calculosDeBonus);
 
             //Jogo do enunciado.
-            //1 
+            //1 Quadro
             Jogo.Jogar(1);
             Jogo.Jogar(4);
-            //2
+            //2 Quadro
             Jogo.Jogar(4);
             Jogo.Jogar(5);
-            //3
+            //3 Quadro
             Jogo.Jogar(6);
             Jogo.Jogar(4);
-            //4
+            //4 Quadro
             Jogo.Jogar(5);
             Jogo.Jogar(5);
-            //5
+            //5 Quadro
             Jogo.Jogar(10);
-            //6
+            //6 Quadro
             Jogo.Jogar(0);
             Jogo.Jogar(1);
-            //7
+            //7 Quadro
             Jogo.Jogar(7);
             Jogo.Jogar(3);
-            //8
+            //8 Quadro
             Jogo.Jogar(6);
             Jogo.Jogar(4);
-            //9
+            //9 Quadro
             Jogo.Jogar(10);
-            //Quadro Bonus 
+            //Quadro com até três jogadas.
             Jogo.Jogar(2);
             Jogo.Jogar(8);
             Jogo.Jogar(6);
 
+            //Preparação
             int pontuacao = Jogo.ObterPontuacao();
-
+            
+            //Validação
             Assert.AreEqual(pontuacao, 133);
         }
 
@@ -97,8 +130,10 @@ namespace BolicheAPP.Test
                 Jogo.Jogar(5);
             }
 
+            //Preparação
             int pontuacao = Jogo.ObterPontuacao();
-
+            
+            //Validação
             Assert.AreEqual(pontuacao, 145);
         }
 
@@ -113,9 +148,11 @@ namespace BolicheAPP.Test
             {
                 Jogo.Jogar(10);
             }
-
+            
+            //Preparação
             int pontuacao = Jogo.ObterPontuacao();
-
+            
+            //Validação
             Assert.AreEqual(pontuacao, 300);
         }
 
