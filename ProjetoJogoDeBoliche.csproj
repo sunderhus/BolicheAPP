@@ -51,7 +51,7 @@
     <Compile Include="JogoDeBoliche.cs" />
     <Compile Include="JogoBonusCalculos.cs" />
     <Compile Include="JogoBonusValidacoes.cs" />
-    <Compile Include="TestarJogo.cs" />
+    <Compile Include="ManualTesteJogo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
