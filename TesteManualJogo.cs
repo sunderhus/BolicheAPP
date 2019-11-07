@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoJogoDeBoliche
 {
-    class ManualTesteJogo
+    class TesteManualJogo
     {
         static void Main(string[] args)
         {
