@@ -80,8 +80,8 @@ namespace ProjetoJogoDeBoliche
 
             #region ScoreFinal
             //mostra pontuação do jogo.
-            Console.WriteLine(Jogo.ObterPontuacao() + " Pontos.");
             #endregion
+            Console.WriteLine(Jogo.ObterPontuacao() + " Pontos.");
           
         }
 
