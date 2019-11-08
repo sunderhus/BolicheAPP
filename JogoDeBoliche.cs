@@ -14,7 +14,7 @@ namespace ProjetoJogoDeBoliche
         private IJogoBonusValidacoes _validacoesDeBonus;
         private IJogoBonusCalculos _calculosDeBonus;
 
-        public JogoDeBoliche(JogoBonusValidacoes validacoesDeBonus, JogoBonusCalculos calculosDeBonus)
+        public JogoDeBoliche(IJogoBonusValidacoes validacoesDeBonus, IJogoBonusCalculos calculosDeBonus)
         {
             this._validacoesDeBonus = validacoesDeBonus;
             this._calculosDeBonus = calculosDeBonus;
